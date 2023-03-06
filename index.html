@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="icon" href="./images/icons8-calculator-48.png">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <form action="" name="calc" class="calculator">
+      <input type="text" class="value" id="result" readonly name="txt" placeholder="0" />
+      <span class="num or" onclick="allClear()"><i>AC</i></span>
+      <span class="num or" onclick="percent()"><i>%</i></span>
+      <span class="num or" onclick="displayNum('/')"><i>/</i></span>
+      <span class="num or" onclick="displayNum('*')"><i>*</i></span>
+      <span class="num" onclick="displayNum(7)"><i>7</i></span>
+      <span class="num" onclick="displayNum(8)"><i>8</i></span>
+      <span class="num" onclick="displayNum(9)"><i>9</i></span>
+      <span class="num or" onclick="displayNum('-')"><i>-</i></span>
+      <span class="num" onclick="displayNum(4)"><i>4</i></span>
+      <span class="num" onclick="displayNum(5)"><i>5</i></span>
+      <span class="num" onclick="displayNum(6)"><i>6</i></span>
+      <span class="num or" onclick="displayNum('+')"><i>+</i></span>
+      <span class="num" onclick="displayNum(1)"><i>1</i></span>
+      <span class="num" onclick="displayNum(2)"><i>2</i></span>
+      <span class="num" onclick="displayNum(3)"><i>3</i></span>
+      <span class="num equal" onclick="evaluateExpr()"><i>=</i></span>
+      <span class="num or" onclick="backSpace()"><i>C</i></span>
+      <span class="num" onclick="displayNum(0)"><i>0</i></span>
+      <span class="num" onclick="displayNum('.')"><i>.</i></span>
+
+
+    </form>
+  </div>
+  <script src="./calc.js"></script>
+
+</body>
+
+</html>
